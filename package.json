@@ -4,7 +4,8 @@
   "description": "vue.js的例子",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --inline --hot --quiet",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,19 @@
   },
   "homepage": "https://github.com/mainpro/vue-example#readme",
   "devDependencies": {
-    "bower": "^1.7.7"
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "babel-runtime": "^5.8.25",
+    "cross-env": "^1.0.5",
+    "css-loader": "^0.21.0",
+    "style-loader": "^0.13.0",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^6.0.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "vue": "^1.0.0"
   }
 }
