@@ -7,6 +7,16 @@ import NewsView from './components/NewsView.vue'
 import ItemView from './components/ItemView.vue'
 import UserView from './components/UserView.vue'
 
+// 定义组件
+var Foo = Vue.extend({
+  template: '<p>This is foo!</p>'
+})
+
+var Bar = Vue.extend({
+  template: '<p>This is bar!</p>'
+})
+
+
 // install router
 Vue.use(Router)
 
@@ -18,6 +28,12 @@ Vue.filter('domain', domain)
 var router = new Router()
 
 router.map({
+  '/foo': {
+    component: Foo
+  },
+  '/bar': {
+    component: Bar
+  },
   '/news/:page': {
     component: NewsView
   },

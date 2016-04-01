@@ -47,27 +47,6 @@ a
   min-height 80px
   margin 0 auto
 
-#header
-  background-color #f60
-  height 24px
-  position relative
-  h1
-    font-weight bold
-    font-size 13px
-    display inline-block
-    vertical-align middle
-    margin 0
-  .source
-    color #fff
-    font-size 11px
-    position absolute
-    top 4px
-    right 4px
-    a
-      color #fff
-      &:hover
-        text-decoration underline
-
 #yc
   border 1px solid #fff
   margin 2px
